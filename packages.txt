@@ -4,3 +4,9 @@ net-tools
 dnsutils
 docker
 docker-compose
+tcpdump
+wget
+python3
+openssh-server
+tinyproxy
+htop
