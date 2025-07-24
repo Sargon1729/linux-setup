@@ -1,1 +1,4 @@
-apt install $(cat packages.txt)
+apt install $(cat packages.txt) -y
+
+####
+
