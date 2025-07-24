@@ -1,6 +1,6 @@
 iproute2
 vim
 net-tools
-djbdns-utils
+dns-utils
 docker
 docker-compose
