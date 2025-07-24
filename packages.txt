@@ -1,6 +1,6 @@
-ip
+iproute2
 vim
 net-tools
-dns-utils
+djbdns-utils
 docker
 docker-compose
