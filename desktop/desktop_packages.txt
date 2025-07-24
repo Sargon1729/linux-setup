@@ -1,0 +1,9 @@
+keepassxc
+terminator
+wireshark
+brave-browser
+kwrite
+filezilla
+remmina
+audacity
+vlc
