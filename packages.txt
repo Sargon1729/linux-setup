@@ -1,0 +1,6 @@
+ip
+vim
+net-tools
+dns-utils
+docker
+docker-compose
