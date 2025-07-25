@@ -10,3 +10,5 @@ python3
 openssh-server
 tinyproxy
 htop
+cifs-utils
+psmisc
