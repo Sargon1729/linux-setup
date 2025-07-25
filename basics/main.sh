@@ -1,4 +1,4 @@
-apt install $(cat packages.txt) -y
+apt install $(cat basic_packages.txt) -y
 
 #Other packages that cannot be installed with APT############################################
 
