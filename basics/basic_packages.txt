@@ -12,3 +12,4 @@ tinyproxy
 htop
 cifs-utils
 psmisc
+man
