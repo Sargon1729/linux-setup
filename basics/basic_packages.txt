@@ -2,8 +2,6 @@ iproute2
 vim
 net-tools
 dnsutils
-docker
-docker-compose
 tcpdump
 wget
 python3
