@@ -11,3 +11,4 @@ htop
 cifs-utils
 psmisc
 man
+tmux
