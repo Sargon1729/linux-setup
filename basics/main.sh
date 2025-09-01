@@ -8,5 +8,8 @@ wget "https://github.com/Mikescher/better-docker-ps/releases/latest/download/dop
 #Docker
 bash docker.sh
 
+#openvpn3 client
+bash ovpn3.sh
+
 #Mount volumes################################################################################
 #. mount.sh
