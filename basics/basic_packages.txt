@@ -12,3 +12,4 @@ cifs-utils
 psmisc
 man
 tmux
+curl
