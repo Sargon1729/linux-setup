@@ -5,7 +5,7 @@ export non_root_user_path='/home/admin1'
 
 mkdir "$non_root_user_path/source"
 mkdir -p "$non_root_user_path/infra/docker"
-git clone https://github.com/Sargon1729/dotfiles.git $non_root_user_path
+git clone https://github.com/Sargon1729/dotfiles.git "$non_root_user_path/dotfiles"
 
 ############################################################################################ Install from basic_packages.txt
 
