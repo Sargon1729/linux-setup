@@ -10,15 +10,15 @@ git clone https://github.com/Sargon1729/dotfiles.git
 
 ############################################################################################ Install from basic_packages.txt
 
-apt install $(cat basic_packages.txt) -y
+sudo apt install $(cat basic_packages.txt) -y
 
 ############################################################################################ Other packages that cannot be installed with APT
 
-wget "https://github.com/Mikescher/better-docker-ps/releases/latest/download/dops_linux-amd64-static" -O "/usr/local/bin/dops" && chmod +x "/usr/local/bin/dops"
+sudo wget "https://github.com/Mikescher/better-docker-ps/releases/latest/download/dops_linux-amd64-static" -O "/usr/local/bin/dops" && chmod +x "/usr/local/bin/dops"
 
-bash docker.sh
+sudo bash docker.sh
 
-bash ovpn3.sh
+sudo bash ovpn3.sh
 
 ############################################################################################ Mount volumes
 #. mount.sh
