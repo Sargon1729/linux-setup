@@ -16,9 +16,9 @@ sudo apt install $(cat basic_packages.txt) -y
 
 sudo wget "https://github.com/Mikescher/better-docker-ps/releases/latest/download/dops_linux-amd64-static" -O "/usr/local/bin/dops" && chmod +x "/usr/local/bin/dops"
 
-sudo bash docker.sh
+sudo bash ./docker.sh
 
-sudo bash ovpn3.sh
+sudo bash ./ovpn3.sh
 
 ############################################################################################ Mount volumes
 #. mount.sh
