@@ -2,11 +2,10 @@
 export non_root_user_path='/home/admin1'
 
 ############################################################################################ General Setup
-cd $non_root_user_path
 
-mkdir "source"
-mkdir -p "infra/docker"
-git clone https://github.com/Sargon1729/dotfiles.git
+mkdir "$non_root_user_path/source"
+mkdir -p "$non_root_user_path/infra/docker"
+git clone https://github.com/Sargon1729/dotfiles.git $non_root_user_path
 
 ############################################################################################ Install from basic_packages.txt
 
@@ -16,9 +15,9 @@ sudo apt install $(cat basic_packages.txt) -y
 
 sudo wget "https://github.com/Mikescher/better-docker-ps/releases/latest/download/dops_linux-amd64-static" -O "/usr/local/bin/dops" && chmod +x "/usr/local/bin/dops"
 
-sudo bash ./docker.sh
+sudo bash docker.sh
 
-sudo bash ./ovpn3.sh
+sudo bash ovpn3.sh
 
 ############################################################################################ Mount volumes
 #. mount.sh
