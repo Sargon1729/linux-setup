@@ -1,17 +1,24 @@
+#Variables
+export non_root_user_path='/home/admin1'
+
+############################################################################################ General Setup
+cd $non_root_user_path
+
+mkdir "source"
+mkdir -p "infra/docker"
+git clone https://github.com/Sargon1729/dotfiles.git
+
+############################################################################################ Install from basic_packages.txt
+
 apt install $(cat basic_packages.txt) -y
 
-#Other packages that cannot be installed with APT############################################
+############################################################################################ Other packages that cannot be installed with APT
 
-#DOPS for better docker ps
 wget "https://github.com/Mikescher/better-docker-ps/releases/latest/download/dops_linux-amd64-static" -O "/usr/local/bin/dops" && chmod +x "/usr/local/bin/dops"
 
-#Docker
 bash docker.sh
 
-#openvpn3 client
 bash ovpn3.sh
 
-#Mount volumes################################################################################
+############################################################################################ Mount volumes
 #. mount.sh
-
-#Create source directory
