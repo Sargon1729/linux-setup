@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the timeout in minutes
-TIMEOUT=60
+TIMEOUT=1440
 
 # Define the file to be created in sudoers.d
 SUDOERS_FILE="/etc/sudoers.d/custom_timeout"
