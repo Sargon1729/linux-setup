@@ -19,5 +19,7 @@ sudo bash docker.sh
 
 sudo bash ovpn3.sh
 
+sudo bash sudo_timeout.sh
+
 ############################################################################################ Mount volumes
 #. mount.sh
