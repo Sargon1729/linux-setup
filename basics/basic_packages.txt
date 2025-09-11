@@ -13,3 +13,4 @@ psmisc
 man
 tmux
 curl
+nmap
