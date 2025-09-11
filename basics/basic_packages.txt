@@ -14,3 +14,5 @@ man
 tmux
 curl
 nmap
+knot-dnsutils
+hping3
