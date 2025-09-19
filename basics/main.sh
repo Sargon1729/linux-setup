@@ -21,6 +21,8 @@ sudo bash ovpn3.sh
 
 sudo bash sudo_timeout.sh
 
+sudo bash powershell.sh
+
 ############################################################################################ Mount volumes
 #. mount.sh
 
