@@ -23,6 +23,8 @@ sudo bash sudo_timeout.sh
 
 sudo bash powershell.sh
 
+sudo bash install_root_ca.sh
+
 ############################################################################################ Mount volumes
 #. mount.sh
 
