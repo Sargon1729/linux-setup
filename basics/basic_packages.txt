@@ -16,3 +16,5 @@ curl
 nmap
 knot-dnsutils
 hping3
+fuse
+ntfs-3g
