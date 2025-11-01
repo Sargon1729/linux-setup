@@ -20,7 +20,7 @@ wget $package
 mkdir /opt/powershell
 
 # Unpack the tar.gz file
-tar -xvf "./${package##*/}" -C opt/powershell
+tar -xvf "./${package##*/}" -C /opt/powershell
 
 
-ln -s opt/powershell/pwsh /usr/bin/pwsh
+ln -s /opt/powershell/pwsh /usr/bin/pwsh
