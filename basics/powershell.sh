@@ -1,26 +1,30 @@
 ###################################
 # Prerequisites
 
-# Update package lists
+# Update the list of packages
 sudo apt-get update
 
-# Install dependencies
-sudo apt-get install jq libssl1.1 libunwind8 -y
+# Install pre-requisite packages.
+sudo apt-get install -y wget
+
+# Get the version of Debian
+source /etc/os-release
+
+# Download the Microsoft repository GPG keys
+wget -q https://packages.microsoft.com/config/debian/$VERSION_ID/packages-microsoft-prod.deb
+
+# Register the Microsoft repository GPG keys
+sudo dpkg -i packages-microsoft-prod.deb
+
+# Delete the Microsoft repository GPG keys file
+rm packages-microsoft-prod.deb
+
+# Update the list of packages after we added packages.microsoft.com
+sudo apt-get update
 
 ###################################
-# Download and extract PowerShell
+# Install PowerShell
+sudo apt-get install -y powershell
 
-# Grab the latest tar.gz
-bits=$(getconf LONG_BIT)
-release=$(curl -sL https://api.github.com/repos/PowerShell/PowerShell/releases/latest)
-package=$(echo $release | jq -r ".assets[].browser_download_url" | grep "linux-arm${bits}.tar.gz")
-wget $package
-
-# Make folder to put powershell
-mkdir /opt/powershell
-
-# Unpack the tar.gz file
-tar -xvf "./${package##*/}" -C opt/powershell
-
-
-udo ln -s opt/powershell/pwsh /usr/bin/pwsh
+# Start PowerShell
+pwsh
