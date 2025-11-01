@@ -23,4 +23,4 @@ mkdir /opt/powershell
 tar -xvf "./${package##*/}" -C opt/powershell
 
 
-udo ln -s opt/powershell/pwsh /usr/bin/pwsh
+ln -s opt/powershell/pwsh /usr/bin/pwsh
