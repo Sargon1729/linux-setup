@@ -1,2 +1,2 @@
 # Linux-setup
-Linux initial set up. This is truly the beginning of something great.
+Minimal version, to be used on foreign systems etc.
