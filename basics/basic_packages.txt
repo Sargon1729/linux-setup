@@ -19,3 +19,4 @@ hping3
 fuse
 ntfs-3g
 iperf3
+rsync
