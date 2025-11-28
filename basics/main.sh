@@ -25,6 +25,8 @@ sudo bash powershell.sh
 
 sudo bash install_root_ca.sh
 
+cp ./authorized_keys "$non_root_user_path/.ssh/"
+
 ############################################################################################ Mount volumes
 #. mount.sh
 
