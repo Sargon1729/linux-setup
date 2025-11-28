@@ -20,3 +20,5 @@ fuse
 ntfs-3g
 iperf3
 rsync
+cryptsetup
+parted
