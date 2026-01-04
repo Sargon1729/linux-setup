@@ -22,3 +22,4 @@ iperf3
 rsync
 cryptsetup
 parted
+batcat
