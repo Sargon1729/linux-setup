@@ -23,4 +23,4 @@ rsync
 cryptsetup
 parted
 batcat
-most                #test
+most
