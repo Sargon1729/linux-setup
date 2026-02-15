@@ -9,7 +9,7 @@ git clone https://github.com/Sargon1729/dotfiles.git "$non_root_user_path/dotfil
 
 ############################################################################################ Install from basic_packages.txt
 
-sudo apt install $(cat basic_packages.txt) -y
+sudo apt install $(cat basic_packages.txt | grep -v '-') -y
 
 ############################################################################################ Other packages that cannot be installed with APT
 
@@ -17,13 +17,13 @@ sudo wget "https://github.com/Mikescher/better-docker-ps/releases/latest/downloa
 
 sudo bash docker.sh
 
-sudo bash ovpn3.sh
+#sudo bash ovpn3.sh
 
 sudo bash sudo_timeout.sh
 
 sudo bash powershell.sh
 
-sudo bash install_root_ca.sh
+#sudo bash install_root_ca.sh
 
 cp ./authorized_keys "$non_root_user_path/.ssh/"
 
