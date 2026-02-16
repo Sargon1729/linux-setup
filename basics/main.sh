@@ -1,5 +1,5 @@
 #Variables
-export non_root_user_path='/home/admin1'
+source ./.config
 
 ############################################################################################ General Setup
 
