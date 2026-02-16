@@ -1,24 +1,24 @@
-iproute2            # ip, route, netstat, arp
+iproute2            #ip,route,Netstat,arp
 vim
-dnsutils            # dig, nslookup, host
+dnsutils            #dig,nslookup,host
 tcpdump
 wget
 python3
 openssh-server
 tinyproxy
 htop
-cifs-utils          # Cifs mounting
-fuse                # NTFS
-ntfs-3g             # NTFS
-psmisc              # killall, pidof, pstree, peekfd
+cifs-utils          #Cifs-mounting
+fuse                #NTFS
+ntfs-3g             #NTFS
+psmisc              #killall,pidof,pstree,peekfd
 man
 tmux
 curl
 nmap
-knot-dnsutils       # kdig
+knot-dnsutils       #kdig
 hping3
 iperf3
 rsync
-cryptsetup          # LUKS
-parted              # Drive partitioning
+cryptsetup          #LUKS
+parted              #Drive-partitioning
 most
