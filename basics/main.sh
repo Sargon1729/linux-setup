@@ -17,15 +17,18 @@ sudo wget "https://github.com/Mikescher/better-docker-ps/releases/latest/downloa
 
 sudo bash docker.sh
 
-#sudo bash ovpn3.sh
 
 sudo bash sudo_timeout.sh
 
 sudo bash powershell.sh
 
-#sudo bash install_root_ca.sh
+if [ -d "$non_root_user_path/.ssh" ]; then
+    cp ./authorized_keys "$non_root_user_path/.ssh/"
+else
+    mkdir $non_root_user_path/.ssh
+    cp ./authorized_keys "$non_root_user_path/.ssh/"
+fi
 
-cp ./authorized_keys "$non_root_user_path/.ssh/"
 
 ############################################################################################ Mount volumes
 #. mount.sh
