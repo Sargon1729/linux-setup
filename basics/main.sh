@@ -9,7 +9,7 @@ git clone https://github.com/Sargon1729/dotfiles.git "$non_root_user_path/dotfil
 
 ############################################################################################ Install from basic_packages.txt
 
-sudo apt install $(cat basic_packages.txt | grep -v '-') -y
+sudo apt install $(cat basic_packages.txt | egrep -v '#|-') -y
 
 ############################################################################################ Other packages that cannot be installed with APT
 
