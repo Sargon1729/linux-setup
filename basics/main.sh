@@ -68,3 +68,5 @@ write_log "Installed SSH key"
 ############################################################################################ Disable Processes
 sudo systemctl stop $(cat disable_services.txt)
 sudo systemctl disable $(cat disable_services.txt)
+
+##comment for testing
