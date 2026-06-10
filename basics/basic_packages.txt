@@ -22,3 +22,5 @@ iperf3
 rsync
 cryptsetup
 parted
+nload
+iftop
