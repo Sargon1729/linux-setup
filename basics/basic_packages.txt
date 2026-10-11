@@ -24,3 +24,5 @@ cryptsetup
 parted
 nload
 iftop
+sysstat
+iotop
